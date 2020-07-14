@@ -24,6 +24,7 @@
 		18E87C0F24BDA5B200D197CC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C0E24BDA5B200D197CC /* img1.png */; };
 		18E87C1124BDA5B800D197CC /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C1024BDA5B800D197CC /* img2.png */; };
 		18E87C1524BDAAE500D197CC /* app intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C1424BDAAE500D197CC /* app intro.png */; };
+		18E87C1724BDABCE00D197CC /* quizzerintro.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C1624BDABCE00D197CC /* quizzerintro.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		18E87C0E24BDA5B200D197CC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 		18E87C1024BDA5B800D197CC /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		18E87C1424BDAAE500D197CC /* app intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app intro.png"; sourceTree = "<group>"; };
+		18E87C1624BDABCE00D197CC /* quizzerintro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quizzerintro.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				18E87C0E24BDA5B200D197CC /* img1.png */,
 				18E87C1024BDA5B800D197CC /* img2.png */,
 				18E87C1424BDAAE500D197CC /* app intro.png */,
+				18E87C1624BDABCE00D197CC /* quizzerintro.png */,
 			);
 			path = screenshots;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182CCBDE24BB4DDA00AE1029 /* LaunchScreen.storyboard in Resources */,
+				18E87C1724BDABCE00D197CC /* quizzerintro.png in Resources */,
 				18E87C1524BDAAE500D197CC /* app intro.png in Resources */,
 				18E87C0D24BDA5A000D197CC /* img0.png in Resources */,
 				18E87C1124BDA5B800D197CC /* img2.png in Resources */,
