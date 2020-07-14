@@ -74,7 +74,6 @@ struct Brainquiz{
     }
     
     
-    
     mutating func getscore() -> Int{
         
         return score
@@ -87,5 +86,114 @@ struct Brainquiz{
         
         return scoreprogress
     }
+    
+}
+
+
+
+//brain of multiple Choice Quiz
+
+
+struct MBrainQuiz{
+    
+    var Mquestionumber = 0
+    var Mscore = 0
+    
+    let Mquiz = [
+           
+        MQuestion(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], correctAnswer: "Skin"),
+        MQuestion(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], correctAnswer: "100"),
+        MQuestion(q: "What do the letters in the GMT time zone stand for?", a: ["Global Meridian Time", "Greenwich Mean Time", "General Median Time"], correctAnswer: "Greenwich Mean Time"),
+        MQuestion(q: "What is the French word for 'hat'?", a: ["Chapeau", "Écharpe", "Bonnet"], correctAnswer: "Chapeau"),
+        MQuestion(q: "In past times, what would a gentleman keep in his fob pocket?", a: ["Notebook", "Handkerchief", "Watch"], correctAnswer: "Watch"),
+        MQuestion(q: "How would one say goodbye in Spanish?", a: ["Au Revoir", "Adiós", "Salir"], correctAnswer: "Adiós"),
+        MQuestion(q: "Which of these colours is NOT featured in the logo for Google?", a: ["Green", "Orange", "Blue"], correctAnswer: "Orange"),
+        MQuestion(q: "What alcoholic drink is made from molasses?", a: ["Rum", "Whisky", "Gin"], correctAnswer: "Rum"),
+        MQuestion(q: "What type of animal was Harambe?", a: ["Panda", "Gorilla", "Crocodile"], correctAnswer: "Gorilla"),
+        MQuestion(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], correctAnswer: "Australia")
+
+
+       
+       ]
+    
+    
+    mutating func Mcheackanswer(_ useranswer : String) -> Bool{
+           
+        if useranswer == Mquiz[Mquestionumber].correctAnswer{
+            
+               Mscore += 1
+               
+               return true
+               
+           }else{
+               
+               Mscore += 0
+               return false
+               
+           }
+           
+       }
+    
+    func Mgetquestiontext() -> String{
+           
+           return Mquiz[Mquestionumber].q
+       }
+       
+       
+       
+    func Mgetprogress() -> Float{
+           
+           let progress = Float(Mquestionumber) / Float(Mquiz.count)
+           
+           return progress
+       }
+       
+       
+       
+    mutating func Mnextquestion(){
+           
+           if Mquestionumber + 1 < Mquiz.count{
+               Mquestionumber += 1
+           }else{
+               Mquestionumber = 0
+               Mscore = 0
+           }
+       }
+       
+       
+       
+    mutating func Mgetscore() -> Int{
+           
+           return Mscore
+           
+       }
+       
+       
+    func Mscoreprogress() -> Float{
+           
+           let scoreprogress = Float(Mscore) / Float(Mquiz.count)
+           
+           return scoreprogress
+       }
+       
+    func option1text() -> String{
+        let option = Mquiz[Mquestionumber].a[0]
+        return option
+    }
+    
+    func option2text() -> String{
+           let option = Mquiz[Mquestionumber].a[1]
+           return option
+       }
+    
+    func option3text() -> String{
+           let option = Mquiz[Mquestionumber].a[2]
+           return option
+       }
+    
+    
+    
+    
+    
     
 }

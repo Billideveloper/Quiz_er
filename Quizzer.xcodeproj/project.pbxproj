@@ -24,6 +24,8 @@
 		18E87C0F24BDA5B200D197CC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C0E24BDA5B200D197CC /* img1.png */; };
 		18E87C1124BDA5B800D197CC /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C1024BDA5B800D197CC /* img2.png */; };
 		18E87C1924BDACC000D197CC /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C1824BDACC000D197CC /* screenshot.png */; };
+		18E87C1B24BDD3E100D197CC /* homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E87C1A24BDD3E100D197CC /* homevc.swift */; };
+		18E87C1F24BDE6CD00D197CC /* multipleQuizvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E87C1E24BDE6CD00D197CC /* multipleQuizvc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		18E87C0E24BDA5B200D197CC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 		18E87C1024BDA5B800D197CC /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		18E87C1824BDACC000D197CC /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		18E87C1A24BDD3E100D197CC /* homevc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homevc.swift; sourceTree = "<group>"; };
+		18E87C1E24BDE6CD00D197CC /* multipleQuizvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multipleQuizvc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				182CCBD224BB4DD700AE1029 /* ViewController.swift */,
+				18E87C1A24BDD3E100D197CC /* homevc.swift */,
+				18E87C1E24BDE6CD00D197CC /* multipleQuizvc.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -325,9 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				182CCBD324BB4DD700AE1029 /* ViewController.swift in Sources */,
+				18E87C1B24BDD3E100D197CC /* homevc.swift in Sources */,
 				182CCBCF24BB4DD700AE1029 /* AppDelegate.swift in Sources */,
 				1800761B24BC6A0E0050A4EA /* brain.swift in Sources */,
 				182CCBD924BB4DD700AE1029 /* Quizzer.xcdatamodeld in Sources */,
+				18E87C1F24BDE6CD00D197CC /* multipleQuizvc.swift in Sources */,
 				1800761624BC55630050A4EA /* Questions.swift in Sources */,
 				182CCBD124BB4DD700AE1029 /* SceneDelegate.swift in Sources */,
 			);
