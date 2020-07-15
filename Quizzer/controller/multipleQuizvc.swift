@@ -28,7 +28,6 @@ class multipleQuizvc: UIViewController {
     
     @IBOutlet weak var option3: UIButton!
     
-    @IBOutlet weak var option4: UIButton!
     
     
     
@@ -72,10 +71,7 @@ class multipleQuizvc: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
            
-        
-        
-        
-        
+    
     }
     
     @objc func updateUI(){
@@ -99,6 +95,25 @@ class multipleQuizvc: UIViewController {
         option2.setTitle(mbrainquiz.option2text(), for: .normal)
         
         option3.setTitle(mbrainquiz.option3text(), for: .normal)
+        
+        
+        if mbrainquiz.Mshowpopup == true{
+                  
+                  let popvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popmeup") as! popmeupVc
+                  
+                  self.addChild(popvc)
+                  
+                  popvc.view.frame = self.view.frame
+                  
+                  self.view.addSubview(popvc.view)
+                  
+                  popvc.didMove(toParent: self)
+                  
+                  
+            popvc.scorelabel.text = " Hey!! Your Score is \(mbrainquiz.Mpopupscore)"
+                  
+                  
+              }
         
         
         

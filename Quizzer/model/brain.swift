@@ -12,6 +12,8 @@ struct Brainquiz{
     
     var questionumber = 0
     var score = 0
+    var showpopup = false
+    var popupscore = 0
     
     let quiz = [
         
@@ -36,11 +38,11 @@ struct Brainquiz{
         
         if useranswer == quiz[questionumber].a{
             score += 1
-            
+            popupscore = score
             return true
             
         }else{
-            
+            popupscore = score 
             score += 0
             return false
             
@@ -55,6 +57,7 @@ struct Brainquiz{
     }
     
     
+
     func getprogress() -> Float{
         
         let progress = Float(questionumber) / Float(quiz.count)
@@ -66,12 +69,23 @@ struct Brainquiz{
     mutating func nextquestion(){
         
         if questionumber + 1 < quiz.count{
+            showpopup = false
             questionumber += 1
+            
+            
         }else{
+            
+            //show popup
+            
+            showpopup = true
             questionumber = 0
             score = 0
         }
     }
+    
+   
+    
+    
     
     
     mutating func getscore() -> Int{
@@ -98,6 +112,9 @@ struct MBrainQuiz{
     
     var Mquestionumber = 0
     var Mscore = 0
+    var Mshowpopup = false
+    var Mpopupscore = 0
+
     
     let Mquiz = [
            
@@ -122,12 +139,15 @@ struct MBrainQuiz{
         if useranswer == Mquiz[Mquestionumber].correctAnswer{
             
                Mscore += 1
+            
+            Mpopupscore = Mscore
                
                return true
                
            }else{
                
                Mscore += 0
+             Mpopupscore = Mscore
                return false
                
            }
@@ -153,14 +173,26 @@ struct MBrainQuiz{
     mutating func Mnextquestion(){
            
            if Mquestionumber + 1 < Mquiz.count{
-               Mquestionumber += 1
+               
+            Mquestionumber += 1
+            
+            Mshowpopup = false
+            
            }else{
-               Mquestionumber = 0
-               Mscore = 0
+            
+            Mshowpopup = true
+               
+            Mquestionumber = 0
+               
+            Mscore = 0
+            
            }
        }
        
-       
+    
+    
+    
+    
        
     mutating func Mgetscore() -> Int{
            

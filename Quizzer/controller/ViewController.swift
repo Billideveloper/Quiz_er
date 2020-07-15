@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var truebtn: UIButton!
     
-    
     @IBOutlet weak var falsebtn: UIButton!
     
     @IBOutlet weak var Scorelabel: UILabel!
@@ -33,9 +32,7 @@ class ViewController: UIViewController {
         
        updateUI()
         
-    // hey everything is fine
-        
-        // Do any additional setup after loading the view.
+  
     }
 
     
@@ -62,7 +59,6 @@ class ViewController: UIViewController {
         
         brainquiz.nextquestion()
         
-        
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     
     }
@@ -82,6 +78,25 @@ class ViewController: UIViewController {
         progressbar.progress = brainquiz.getprogress()
         
         scoreprogress.progress = brainquiz.scoreprogress()
+        
+        
+        if brainquiz.showpopup == true{
+            
+            let popvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popmeup") as! popmeupVc
+            
+            self.addChild(popvc)
+            
+            popvc.view.frame = self.view.frame
+            
+            self.view.addSubview(popvc.view)
+            
+            popvc.didMove(toParent: self)
+            
+            
+            popvc.scorelabel.text = " Hey!! Your Score is \(brainquiz.popupscore)"
+            
+            
+        }
         
     }
     
