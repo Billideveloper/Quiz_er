@@ -5,4 +5,4 @@ on each correct answer it will add +1 point to your score label and after all
 questions it will restart automatically when u are about to finish the quiz. 
 check it out
 
-![](https://github.com/Billideveloper/Quiz_er/blob/master/Quizzer/screenshots/screenshot.png?raw=true)
+![](https://github.com/Billideveloper/Quiz_er/blob/master/Quizzer/screenshots/App_cover.png?raw=true)
