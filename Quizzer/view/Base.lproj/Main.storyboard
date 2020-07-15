@@ -373,6 +373,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-ns-PEr">
                                 <rect key="frame" x="47" y="223" width="320" height="450"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quiz background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-gM-ZJk">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SF2-8y-zCD">
                                         <rect key="frame" x="40" y="330" width="240" height="100"/>
                                         <subviews>
@@ -432,11 +435,15 @@
                                     <constraint firstItem="SF2-8y-zCD" firstAttribute="leading" secondItem="Ibt-ns-PEr" secondAttribute="leading" constant="40" id="2Fo-J4-dUV"/>
                                     <constraint firstAttribute="trailing" secondItem="0z9-yh-ter" secondAttribute="trailing" constant="105" id="2vf-F1-2el"/>
                                     <constraint firstAttribute="trailing" secondItem="SF2-8y-zCD" secondAttribute="trailing" constant="40" id="Cn6-sg-4b3"/>
+                                    <constraint firstItem="bdz-gM-ZJk" firstAttribute="width" secondItem="Ibt-ns-PEr" secondAttribute="width" multiplier="0.75" constant="80" id="IXV-x3-USX"/>
                                     <constraint firstItem="0z9-yh-ter" firstAttribute="top" secondItem="Ibt-ns-PEr" secondAttribute="top" constant="30" id="LI3-o8-mI7"/>
+                                    <constraint firstItem="bdz-gM-ZJk" firstAttribute="centerX" secondItem="Ibt-ns-PEr" secondAttribute="centerX" id="QOh-Ck-Wo5"/>
                                     <constraint firstAttribute="width" constant="320" id="c4J-wa-ZUY"/>
+                                    <constraint firstItem="bdz-gM-ZJk" firstAttribute="centerY" secondItem="Ibt-ns-PEr" secondAttribute="centerY" id="e8n-Cz-TTh"/>
                                     <constraint firstAttribute="bottom" secondItem="SF2-8y-zCD" secondAttribute="bottom" constant="20" id="hjp-uu-c1K"/>
                                     <constraint firstAttribute="trailing" secondItem="Svb-Yg-lMU" secondAttribute="trailing" constant="10" id="idU-Tz-beY"/>
                                     <constraint firstAttribute="height" constant="450" id="pJZ-Vm-NoW"/>
+                                    <constraint firstItem="bdz-gM-ZJk" firstAttribute="height" secondItem="Ibt-ns-PEr" secondAttribute="height" multiplier="0.284444" constant="322" id="pZC-Xi-86H"/>
                                     <constraint firstItem="Svb-Yg-lMU" firstAttribute="top" secondItem="0z9-yh-ter" secondAttribute="bottom" constant="18" id="uQZ-ho-wNx"/>
                                     <constraint firstItem="Svb-Yg-lMU" firstAttribute="leading" secondItem="Ibt-ns-PEr" secondAttribute="leading" constant="10" id="uYR-S0-lOo"/>
                                     <constraint firstItem="0z9-yh-ter" firstAttribute="leading" secondItem="Ibt-ns-PEr" secondAttribute="leading" constant="86" id="vNW-uW-Hpv"/>
