@@ -19,6 +19,7 @@
 		182CCBE924BB4DDA00AE1029 /* QuizzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CCBE824BB4DDA00AE1029 /* QuizzerTests.swift */; };
 		182CCBF424BB4DDA00AE1029 /* QuizzerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CCBF324BB4DDA00AE1029 /* QuizzerUITests.swift */; };
 		182CCC0224BC276C00AE1029 /* quiz background.png in Resources */ = {isa = PBXBuildFile; fileRef = 182CCC0124BC276C00AE1029 /* quiz background.png */; };
+		18DE781524BECF900067ADB5 /* App_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DE781424BECF900067ADB5 /* App_cover.png */; };
 		18E87C0B24BDA58C00D197CC /* appintro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C0A24BDA58C00D197CC /* appintro.mov */; };
 		18E87C0D24BDA5A000D197CC /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C0C24BDA5A000D197CC /* img0.png */; };
 		18E87C0F24BDA5B200D197CC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E87C0E24BDA5B200D197CC /* img1.png */; };
@@ -65,6 +66,7 @@
 		182CCBF324BB4DDA00AE1029 /* QuizzerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzerUITests.swift; sourceTree = "<group>"; };
 		182CCBF524BB4DDA00AE1029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182CCC0124BC276C00AE1029 /* quiz background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz background.png"; sourceTree = "<group>"; };
+		18DE781424BECF900067ADB5 /* App_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = App_cover.png; path = "../../../../../Creative Cloud Files/App_cover.png"; sourceTree = "<group>"; };
 		18E87C0A24BDA58C00D197CC /* appintro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = appintro.mov; sourceTree = "<group>"; };
 		18E87C0C24BDA5A000D197CC /* img0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img0.png; sourceTree = "<group>"; };
 		18E87C0E24BDA5B200D197CC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				18E87C0C24BDA5A000D197CC /* img0.png */,
 				18E87C0E24BDA5B200D197CC /* img1.png */,
 				18E87C1024BDA5B800D197CC /* img2.png */,
+				18DE781424BECF900067ADB5 /* App_cover.png */,
 				18E87C1824BDACC000D197CC /* screenshot.png */,
 			);
 			path = screenshots;
@@ -305,6 +308,7 @@
 				18E87C1124BDA5B800D197CC /* img2.png in Resources */,
 				18E87C1924BDACC000D197CC /* screenshot.png in Resources */,
 				182CCBDB24BB4DDA00AE1029 /* Assets.xcassets in Resources */,
+				18DE781524BECF900067ADB5 /* App_cover.png in Resources */,
 				18E87C0B24BDA58C00D197CC /* appintro.mov in Resources */,
 				182CCBD624BB4DD700AE1029 /* Main.storyboard in Resources */,
 				18E87C0F24BDA5B200D197CC /* img1.png in Resources */,
