@@ -27,7 +27,7 @@ class homevc: UIViewController {
     
     @IBAction func true_False_Quiz_Btn_Pressed(_ sender: Any) {
         
-        
+        //added through storyboard 
         
         
     }
